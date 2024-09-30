@@ -9,7 +9,7 @@ const SocialLinks = () => {
                      id: 1,
                      child: (
                         <>LinkedIn <FaLinkedin size={30}/></>
-                     ), href: 'https://www.linkedin.com/in/pranav-soni-93889b229/',
+                     ), href: 'https://www.linkedin.com/in/pranavsoni27/',
                      style: 'rounded-tr-md' 
                 },
                 {

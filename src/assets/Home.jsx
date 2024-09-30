@@ -20,19 +20,19 @@ const Home = () => {
                       <p className='text-gray-400 max-w-3xl pt-8 pb-8'>Proficiency in HTML, CSS, JavaScript, React.js, and Node.js, I builds responsive and beautiful websites that adapt to various devices and screen sizes. Additionally, my interest in UI/UX design fuels my passion for creating visually appealing and user-friendly interfaces with help of figma design.
                       </p>
                       <div className='w-40'>
-                        <a href="https://drive.google.com/file/d/1Dfte39Hx04A0Dn8eU2QmFar6pzGHCK5n/view?usp=sharing" target='_blank'><button className='text-white px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:scale-105 duration-200'>My Resume <span><MdOutlineNorthEast size={20} className='ml-1'/></span></button></a>
+                        <a href="https://drive.google.com/file/d/1CZbL9zMVj5bUPZXC6qvV1Fa8W-WkoNYx/view?usp=sharing" target='_blank'><button className='text-white px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-b from-cyan-500 to-blue-500 cursor-pointer hover:scale-105 duration-200'>My Resume <span><MdOutlineNorthEast size={20} className='ml-1'/></span></button></a>
                         
                       </div>
                 </div>
 
-                <div className='pl-8 md:pt-16'>
+                <div className='pl-8 pt-4 md:pt-16'>
                   <img className='bg-cyan-950 blob-effect border-4 border-cyan-600 hover:scale-105 duration-200 rounded-full mx-12 w-2/3 md:w-80 md:mt-0 mt-16' src={pranavv} alt="" />
                 </div>
         </div>
 
-        <div className='flex justify-center pt-16 md:hidden   items-center'>
+        {/* <div className='flex justify-center pt-16 md:hidden   items-center'>
         <MdOutlineKeyboardArrowDown size={45} className='ml-1 text-white'/>
-        </div>
+        </div> */}
         
     </div>
   )
