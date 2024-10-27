@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import pranavv from '../assets/pranavv.png'
 import {useTypewriter} from 'react-simple-typewriter'
 import {MdOutlineKeyboardArrowDown, MdOutlineNorthEast} from 'react-icons/md'
@@ -12,11 +12,20 @@ const Home = () => {
     deleteSpeed: 40
   })
 
+  useEffect(() => {
+    // Ensure Shery.js is loaded before calling the method
+    if (window.Shery) {
+      Shery.makeMagnet('.a');
+      
+    }
+  }, []);
+
+
   return (
-    <div name ="𝙷𝚘𝚖𝚎" className='pt-6 md:pt-0 h-screen w-full bg-gradient-to-b from-black via-black to-gray-800'>
+    <div name ="𝙷𝚘𝚖𝚎" className='pt-6 md:pt-0 h-screen w-full bg-gradient-to-b from-black via-black to-cyan-950'>
         <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-auto px-4 lg:pt-16 md:flex-row'>
                 <div className='flex flex-col justify-center h-full mt-32 pl-4'>
-                      <h2 className='text-4xl  sm:text-6xl font-bold text-white'>Hi, I'm <br /><span className='text-cyan-500'>'{typeEffect}</span></h2>  
+                      <h2 className='bb text-4xl  sm:text-6xl font-bold text-white'>Hi, I'm <br /><span className='text-cyan-500'>'{typeEffect}</span></h2>  
                       <p className='text-gray-400 max-w-3xl pt-8 pb-8'>Proficiency in HTML, CSS, JavaScript, React.js, and Node.js, I builds responsive and beautiful websites that adapt to various devices and screen sizes. Additionally, my interest in UI/UX design fuels my passion for creating visually appealing and user-friendly interfaces with help of figma design.
                       </p>
                       <div className='w-40'>
@@ -26,13 +35,9 @@ const Home = () => {
                 </div>
 
                 <div className='pl-8 pt-4 md:pt-16'>
-                  <img className='bg-cyan-950 blob-effect border-4 border-cyan-600 hover:scale-105 duration-200 rounded-full mx-12 w-2/3 md:w-80 md:mt-0 mt-16' src={pranavv} alt="" />
+                  <img className='a bg-cyan-950 blob-effect border-4 border-cyan-600 hover:scale-105 duration-200 rounded-full mx-12 w-2/3 md:w-80 md:mt-0 mt-16' src={pranavv} alt="" />
                 </div>
-        </div>
-
-        {/* <div className='flex justify-center pt-16 md:hidden   items-center'>
-        <MdOutlineKeyboardArrowDown size={45} className='ml-1 text-white'/>
-        </div> */}
+        </div>/
         
     </div>
   )

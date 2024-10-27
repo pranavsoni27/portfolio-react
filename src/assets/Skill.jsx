@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import bootstrap from "../assets/bootstrap.png";
@@ -119,20 +119,27 @@ const Skill = () => {
     },
   ];
 
+  useEffect(() => {
+    // Ensure Shery.js is loaded before calling the method
+    if (window.Shery) {
+      Shery.makeMagnet('.a');
+    }
+  }, []);
+
   return (
     <div
       name="𝚂𝚔𝚒𝚕𝚕𝚜"
-      className="pb-20 md:pb-28 bg-gradient-to-b from-gray-800 to-black w-full h-full md:pt-0 pt-2 text-white"
+      className="pb-20 md:pb-28 bg-gradient-to-b from-green-950 to-orange-950 w-full h-full md:pt-0 pt-2 text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col h-full">
         <p className="text-4xl font-bold">
           <span className='inline border-b-4 border-gray-500'>My Skills:</span>
         </p>
       </div>
-      <div className="mt-8 w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-80">
+      <div className=" mt-8 w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-80">
         {skills.map(({ id, src, title, style }) => (
-          <div key={id} className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-            <img className="w-20 mx-auto" src={src} alt="" />
+          <div key={id} className={`bb shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
+            <img className="a w-20 mx-auto" src={src} alt="" />
             <p className="mt-4">{title}</p>
           </div>
         ))}
