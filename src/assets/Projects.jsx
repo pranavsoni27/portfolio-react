@@ -25,7 +25,7 @@ const Projects = () => {
                                                 <p className='text-3xl'><span className='text-cyan-500 font-bold'>Title: </span>Personal Portfolio Website</p>
                                                 <p className='text-xl mt-2'><span className='text-cyan-500 font-bold'>Technologies/Tools Used: </span>Html, css, javascript, react.js, tailwind css, figma, github, netlify</p>
                                                 <div className='mt-2 flex ml-8 md:ml-16 gap-16'>
-                                                        <a href="https://github.com/pranavsoni27/react-portfolio.git" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
+                                                        <a href="https://github.com/pranavsoni27/portfolio-react.git" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
                                                         <a href="https://pranavsoni.netlify.app" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>Live Demo</button></a>
                                                         
                                                 </div>
