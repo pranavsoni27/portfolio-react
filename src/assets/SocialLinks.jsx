@@ -8,21 +8,23 @@ const SocialLinks = () => {
                 {
                      id: 1,
                      child: (
-                        <>LinkedIn <FaLinkedin size={30}/></>
-                     ), href: 'https://www.linkedin.com/in/pranavsoni27/',
+                        <>Email <HiOutlineMail size={30}/></>
+                        ), href: 'mailto: pranavsoni2702@gmail.com',
                      style: 'rounded-tr-md' 
                 },
                 {
                         id: 2,
                         child: (
-                           <>Github <FaGithub size={30}/></>
-                        ), href: 'https://github.com/pranavsoni27'
+                                <>LinkedIn <FaLinkedin size={30}/></>
+                     ), href: 'https://www.linkedin.com/in/pranavsoni27/'
+                           
                 },
                 {
                         id: 3,
                         child: (
-                           <>Email <HiOutlineMail size={30}/></>
-                        ), href: 'mailto: pranavsoni2702@gmail.com'
+                                <>Github <FaGithub size={30}/></>
+                        ), href: 'https://github.com/pranavsoni27'
+                           
                 },
                 {
                         id: 4,

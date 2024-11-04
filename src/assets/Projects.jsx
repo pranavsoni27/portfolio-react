@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react'
-import p1 from '../assets/p1.jpg'
+import p1 from '../assets/p1.png'
+import lo from '../assets/locatrix.png'
+import server from '../assets/server.png'
 import p4 from '../assets/quickdocmeet.png'
 
 const Projects = () => {
@@ -36,14 +38,14 @@ const Projects = () => {
 
                                 <div className='flex flex-col md:flex-row gap-16 px-12'>
                                         <div className='bb md:w-1/2'>
-                                                <img className='a rounded-lg border-2 border-cyan-500' src={p1} alt="" />
+                                                <img className='a rounded-lg border-2 border-cyan-500' src={lo} alt="" />
                                         </div>
                                         <div className='bb'>
-                                                <p className='text-3xl'><span className='text-cyan-500 font-bold'>Title: </span>Personal Portfolio Website</p>
-                                                <p className='text-xl mt-2'><span className='text-cyan-500 font-bold'>Technologies/Tools Used: </span>Html, css, javascript, react,js, tailwind css, figma, github, netlify</p>
+                                                <p className='text-3xl'><span className='text-cyan-500 font-bold'>Title: </span>Locatrix - Track Your Location</p>
+                                                <p className='text-xl mt-2'><span className='text-cyan-500 font-bold'>Technologies/Tools Used: </span>Html, Css, JavaScript, Express.js, EJS, Socket.io, Leaflet, Github, Glitch</p>
                                                 <div className='mt-2 flex ml-8 md:ml-16 gap-16'>
-                                                        <a href="" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
-                                                        <a href="" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>Live Demo</button></a>
+                                                        <a href="https://github.com/pranavsoni27/locatrix.git" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
+                                                        <a href="https://pointy-rambunctious-intelligence.glitch.me/" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>Live Demo</button></a>
                                                 </div>
                                         </div>  
                                 </div>
@@ -52,10 +54,10 @@ const Projects = () => {
 
                                 <div className='flex flex-col md:flex-row gap-16 px-12'>
                                         <div className='bb md:w-1/2'>
-                                                <img className='a rounded-lg border-2 border-cyan-500' src={p4} alt="" />
+                                                <img className='a rounded-lg border-2 border-cyan-500' src={server} alt="" />
                                         </div>
                                         <div className='bb'>
-                                                <p className='text-3xl'><span className='text-cyan-500 font-bold'>Title: </span>Personal Portfolio Website</p>
+                                                <p className='text-3xl'><span className='text-cyan-500 font-bold'>Title: </span>Multithreaded WebServer</p>
                                                 <p className='text-xl mt-2'><span className='text-cyan-500 font-bold'>Technologies/Tools Used: </span>Html, css, javascript, react.js, tailwind css, figma, github, netlify</p>
                                                 <div className='mt-2 flex ml-8 md:ml-16 gap-16'>
                                                 <a href="" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
