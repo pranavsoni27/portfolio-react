@@ -57,11 +57,11 @@ const Projects = () => {
                                                 <img className='a rounded-lg border-2 border-cyan-500' src={server} alt="" />
                                         </div>
                                         <div className='bb'>
-                                                <p className='text-3xl'><span className='text-cyan-500 font-bold'>Title: </span>Multithreaded WebServer</p>
-                                                <p className='text-xl mt-2'><span className='text-cyan-500 font-bold'>Technologies/Tools Used: </span>Html, css, javascript, react.js, tailwind css, figma, github, netlify</p>
-                                                <div className='mt-2 flex ml-8 md:ml-16 gap-16'>
-                                                <a href="" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
-                                                <a href="" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>Live Demo</button></a>
+                                                <p className='text-3xl'><span className='text-cyan-500 font-bold'>Title: </span>ThreadServer: Connecting multiple clients to server</p>
+                                                <p className='text-xl mt-2'><span className='text-cyan-500 font-bold'>Technologies/Tools Used: </span>Java, Java Sockets, Java Threads, Jmeter, Github</p>
+                                                <div className='mt-2 flex items-center justify-center ml-8 md:-ml-24 gap-16'>
+                                                <a href="https://github.com/pranavsoni27/Server.git" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
+                                                {/* <a href="" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>Live Demo</button></a> */}
                                                 </div>
                                         </div>  
                                 </div>
