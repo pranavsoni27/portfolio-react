@@ -5,17 +5,14 @@ import bootstrap from "../assets/bootstrap.png";
 import js from "../assets/js.png";
 import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
-
 import nodejs from "../assets/nodejs.png";
 import figma from "../assets/figma.png";
 import wordpress from "../assets/wordpress.png";
 import c from "../assets/c.png";
-
 import python from "../assets/python.png";
 import java from "../assets/java.png";
 import mysql from "../assets/mysql.png";
 import github from "../assets/github.png";
-
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/express.png";
 
@@ -120,7 +117,6 @@ const Skill = () => {
   ];
 
   useEffect(() => {
-    // Ensure Shery.js is loaded before calling the method
     if (window.Shery) {
       Shery.makeMagnet('.a');
     }
@@ -136,11 +132,27 @@ const Skill = () => {
           <span className='inline border-b-4 border-gray-500'>My Skills:</span>
         </p>
       </div>
-      <div className=" mt-8 w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-80">
+      <div className="mt-8 w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-80">
         {skills.map(({ id, src, title, style }) => (
-          <div key={id} className={`bb shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
-            <img className="a w-20 mx-auto" src={src} alt="" />
-            <p className="mt-4">{title}</p>
+          <div 
+            key={id} 
+            className={`bb group relative bg-black/30 backdrop-blur-sm rounded-lg p-4 
+              transform transition-all duration-300 hover:scale-105 hover:-translate-y-2
+              ${style} hover:shadow-lg hover:shadow-current`}
+          >
+            <div className="relative z-10">
+              <img 
+                className="a w-20 mx-auto transform group-hover:scale-110 transition-transform duration-300" 
+                src={src} 
+                alt={title} 
+              />
+              <p className="mt-4 font-semibold group-hover:text-cyan-400 transition-colors duration-300">
+                {title}
+              </p>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-current to-transparent 
+              opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg">
+            </div>
           </div>
         ))}
       </div>

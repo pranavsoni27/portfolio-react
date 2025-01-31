@@ -37,7 +37,7 @@ const Home = () => {
                 <div className='pl-8 pt-4 md:pt-16'>
                   <img className='a bg-cyan-950 blob-effect border-4 border-cyan-600 hover:scale-105 duration-200 rounded-full mx-12 w-2/3 md:w-80 md:mt-0 mt-16' src={pranavv} alt="" />
                 </div>
-        </div>/
+        </div>
         
     </div>
   )
