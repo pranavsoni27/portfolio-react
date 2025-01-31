@@ -1,47 +1,39 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="./pranav_logo.svg">
+  <link rel="icon" type="image/svg+xml" href="./pranav_logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>𝙿𝚛𝚊𝚗𝚊𝚟'𝚜 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘</title>
   <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-</head>
-
-<body>
-  <div id="root"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
-
-
+  <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+</head>
+<body>
+  <div id="root"></div>
   <script type="module" src="./src/main.jsx"></script>
-
   <script>
-    function initMouseFollower() {
-      if (window.innerWidth > 768) { // Adjust the width as needed for mobile breakpoints
-        Shery.mouseFollower({
-          skew: true,
-          ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-          duration: 1,
-        });
-      }
-    }
-
-    // Initialize on load and on window resize
-    window.addEventListener("load", initMouseFollower);
-    window.addEventListener("resize", () => {
-      // Clear any existing follower elements on resize if switching to mobile
-      if (window.innerWidth <= 768) {
-        Shery.mouseFollower.destroy(); // Assume Shery.js has a destroy method to remove mouse follower
-      } else {
-        initMouseFollower();
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof Shery !== 'undefined' && Shery.mouseFollower) {
+        try {
+          Shery.mouseFollower();
+        } catch (error) {
+          console.log('Mouse follower initialization skipped');
+        }
       }
     });
 
+    window.addEventListener('beforeunload', function() {
+      if (typeof Shery !== 'undefined' && Shery.mouseFollower && typeof Shery.mouseFollower.destroy === 'function') {
+        try {
+          Shery.mouseFollower.destroy();
+        } catch (error) {
+          console.log('Mouse follower cleanup skipped');
+        }
+      }
+    });
   </script>
 </body>
-
 </html>
