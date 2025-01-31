@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import pranavv from '../assets/pranavv.png'
+import pranavv from './pranavv.png'
 import {useTypewriter} from 'react-simple-typewriter'
 import {MdOutlineKeyboardArrowDown, MdOutlineNorthEast} from 'react-icons/md'
 
