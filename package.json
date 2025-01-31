@@ -1,12 +1,12 @@
 {
-  "homepage": "https://pranavsoni27.github.io/portfolio-react",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://pranavsoni27.github.io/portfolio-react",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/portfolio-react/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",

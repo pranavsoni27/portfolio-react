@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./pranav_logo.svg">
+  <link rel="icon" type="image/svg+xml" href="pranav_logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>𝙿𝚛𝚊𝚗𝚊𝚟'𝚜 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘</title>
   <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-  <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 </head>
 <body>
   <div id="root"></div>
-  <script type="module" src="./src/main.jsx"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module">
+    import * as THREE from 'https://unpkg.com/three@0.155.0/build/three.module.js';
+    window.THREE = THREE;
+  </script>
+  <script src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+  <script type="module" src="src/main.jsx"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       if (typeof Shery !== 'undefined' && Shery.mouseFollower) {
