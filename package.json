@@ -3,10 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pranavsoni27.github.io/portfolio-react",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/portfolio-react/",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
