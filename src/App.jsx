@@ -1,6 +1,7 @@
 import About from "./assets/About"
 import Contact from "./assets/Contact"
 import Education from "./assets/Education"
+import Experience from "./assets/Experience"
 import Footer from "./assets/Footer"
 import Home from "./assets/Home"
 import Navbar from "./assets/Navbar"
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <About/>
       <Education/>
+      <Experience/>
       <Skill/>
       <Projects/>
       <Contact/>

@@ -16,7 +16,7 @@ const Projects = () => {
                 <div name="𝙿𝚛𝚘𝚓𝚎𝚌𝚝𝚜" className='pb-24 md:pt-3 md:pb-28 bg-gradient-to-b from-orange-950 to-blue-950 w-full text-white'>
                         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
                                 <div className='pb-20'>
-                                        <p className='text-4xl font-bold inline border-b-4 border-gray-500'>My Projects:</p>
+                                        <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Projects:</p>
                                 </div>
 
                                 <div className='flex flex-col md:flex-row gap-16 px-12'>
@@ -45,7 +45,7 @@ const Projects = () => {
                                                 <p className='text-xl mt-2'><span className='text-cyan-500 font-bold'>Technologies/Tools Used: </span>Html, Css, JavaScript, Express.js, EJS, Socket.io, Leaflet, Github, Glitch</p>
                                                 <div className='mt-2 flex ml-8 md:ml-16 gap-16'>
                                                         <a href="https://github.com/pranavsoni27/locatrix.git" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>My Code</button></a>
-                                                        <a href="https://pointy-rambunctious-intelligence.glitch.me/" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>Live Demo</button></a>
+                                                        <a href="https://locatrix.onrender.com/" target='_blank'><button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300'>Live Demo</button></a>
                                                 </div>
                                         </div>  
                                 </div>

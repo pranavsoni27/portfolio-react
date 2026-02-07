@@ -6,15 +6,11 @@ import js from "../assets/js.png";
 import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import nodejs from "../assets/nodejs.png";
-import figma from "../assets/figma.png";
-import wordpress from "../assets/wordpress.png";
-import c from "../assets/c.png";
-import python from "../assets/python.png";
 import java from "../assets/java.png";
 import mysql from "../assets/mysql.png";
 import github from "../assets/github.png";
-import mongodb from "../assets/mongodb.png";
-import express from "../assets/express.png";
+import spring from "../assets/spring.png";
+import springboot from "../assets/springboot.png";
 
 const Skill = () => {
   const skills = [
@@ -55,61 +51,31 @@ const Skill = () => {
       style: "shadow-blue-300",
     },
     {
-      id: 7,
-      src: nodejs,
-      title: "Node.js",
-      style: "shadow-green-500",
-    },
-    {
       id: 8,
-      src: express,
-      title: "Express.js",
-      style: "shadow-blue-200",
-    },
-    {
-      id: 9,
-      src: figma,
-      title: "Figma",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 10,
-      src: wordpress,
-      title: "Wordpress",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 11,
-      src: c,
-      title: "C",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 12,
-      src: python,
-      title: "Python",
-      style: "shadow-purple-300",
-    },
-    {
-      id: 13,
       src: java,
       title: "Java",
       style: "shadow-orange-700",
     },
     {
-      id: 14,
+      id: 9,
       src: mysql,
       title: "MySql",
       style: "shadow-blue-400",
     },
     {
-      id: 15,
-      src: mongodb,
-      title: "MongoDB",
-      style: "shadow-green-400",
+      id: 10,
+      src: spring,
+      title: "Spring",
+      style: "shadow-green-600",
     },
     {
-      id: 16,
+      id: 11,
+      src: springboot,
+      title: "Spring Boot",
+      style: "shadow-green-500",
+    },
+    {
+      id: 12,
       src: github,
       title: "Github",
       style: "shadow-blue-200",
@@ -129,7 +95,7 @@ const Skill = () => {
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col h-full">
         <p className="text-4xl font-bold">
-          <span className='inline border-b-4 border-gray-500'>My Skills:</span>
+          <span className='inline border-b-4 border-gray-500'>Skills:</span>
         </p>
       </div>
       <div className="mt-8 w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-80">
