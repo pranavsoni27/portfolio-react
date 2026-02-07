@@ -109,7 +109,7 @@ const Navbar = () => {
                                 <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-white overflow-hidden">
                                         <div className="absolute inset-0">
                                                 <img 
-                                                        src="https://i.pinimg.com/videos/thumbnails/originals/65/8f/d3/658fd3234fee3506121a494522849ec4.0000000.jpg" 
+                                                        src="https://e1.pxfuel.com/desktop-wallpaper/203/641/desktop-wallpaper-black-and-white-polka-dot-textile-portrait-display.jpg" 
                                                         alt="Background Pattern" 
                                                         className="w-full h-full object-cover md:object-center"
                                                 />
