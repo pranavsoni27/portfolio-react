@@ -111,7 +111,7 @@ const Navbar = () => {
                                                 <img 
                                                         src="https://i.pinimg.com/736x/5a/b9/d2/5ab9d2ea8328719ce150b8655b6e86bb.jpg" 
                                                         alt="Background Pattern" 
-                                                        className="w-full h-full object-cover"
+                                                        className="w-full h-full object-cover md:object-center"
                                                 />
                                         </div>
                                         <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60"></div>
