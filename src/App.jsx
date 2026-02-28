@@ -14,7 +14,16 @@ function App() {
 
   return (
     <>
-      <Snowfall color="cyan" />
+      <Snowfall color="cyan" 
+        style={{
+          position: "fixed",
+          width: "100%",
+          height: "100%",
+          zIndex: 5,
+          pointerEvents: "none", // VERY IMPORTANT
+        }}
+        snowflakeCount={120}
+      />
       <Navbar />
       <Home />
       <About />
