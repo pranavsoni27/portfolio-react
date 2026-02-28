@@ -52,7 +52,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
           {links.map(({ id, link }) => (
-            <li key={id} className="text-white text-xl cursor-pointer hover:text-cyan-400">
+            <li key={id} className="text-cyan-400 text-xl cursor-pointer hover:text-white">
               <Link to={link} smooth duration={300}>
                 {link}
               </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
 
           {/* Glass menu */}
           <div
-            className="relative z-50 w-[90%] max-w-md rounded-2xl
+            className="relative z-50 w-[100%] h-[95%] max-w-md rounded-2xl
             bg-white/10 backdrop-blur-xl border border-white/20
             shadow-2xl p-10"
             onClick={(e) => e.stopPropagation()}
@@ -93,7 +93,7 @@ const Navbar = () => {
                     smooth
                     duration={300}
                     onClick={() => setNav(false)}
-                    className="text-2xl font-semibold text-white hover:text-cyan-400 transition"
+                    className="text-2xl font-semibold text-cyan-400 hover:text-white transition"
                   >
                     {link}
                   </Link>
