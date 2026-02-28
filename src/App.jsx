@@ -8,21 +8,23 @@ import Navbar from "./assets/Navbar"
 import Projects from "./assets/Projects"
 import Skill from "./assets/Skill"
 import SocialLinks from "./assets/SocialLinks"
+import Snowfall from "react-snowfall"
 
 function App() {
-  
+
   return (
     <>
-      <Navbar/>
+      <Snowfall color="cyan" />
+      <Navbar />
       <Home />
-      <About/>
-      <Education/>
-      <Experience/>
-      <Skill/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-      <SocialLinks/>
+      <About />
+      <Education />
+      <Experience />
+      <Skill />
+      <Projects />
+      <Contact />
+      <Footer />
+      <SocialLinks />
     </>
   )
 }

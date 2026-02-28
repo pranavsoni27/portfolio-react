@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
-import p1 from '../assets/p1.png'
-import lo from '../assets/locatrix.png'
-import server from '../assets/server.png'
-import p4 from '../assets/quickdocmeet.png'
+import p1 from '../images/p1.png'
+import lo from '../images/locatrix.png'
+import server from '../images/server.png'
+import p4 from '../images/quickdocmeet.png'
 
 const Projects = () => {
         useEffect(() => {

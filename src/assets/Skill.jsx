@@ -1,16 +1,15 @@
 import React, {useEffect} from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import bootstrap from "../assets/bootstrap.png";
-import js from "../assets/js.png";
-import react from "../assets/react.png";
-import tailwind from "../assets/tailwind.png";
-import nodejs from "../assets/nodejs.png";
-import java from "../assets/java.png";
-import mysql from "../assets/mysql.png";
-import github from "../assets/github.png";
-import spring from "../assets/spring.png";
-import springboot from "../assets/springboot.png";
+import html from "../images/html.png";
+import css from "../images/css.png";
+import bootstrap from "../images/bootstrap.png";
+import js from "../images/js.png";
+import react from "../images/react.png";
+import tailwind from "../images/tailwind.png";
+import java from "../images/java.png";
+import mysql from "../images/mysql.png";
+import github from "../images/github.png";
+import spring from "../images/spring.png";
+import springboot from "../images/springboot.png";
 
 const Skill = () => {
   const skills = [
